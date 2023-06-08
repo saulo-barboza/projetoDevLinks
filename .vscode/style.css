@@ -76,7 +76,7 @@ body * {
   transform: translateY(-50%);
   top: 50%;
   left: 0;
-    transition: 3s ease all;
+  transition: 3s ease all;
 }
 
 .light #switch button {
