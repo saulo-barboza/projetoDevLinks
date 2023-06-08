@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: ease-in .4s;
    
 }
 
@@ -78,13 +79,16 @@ body * {
   transform: translateY(-50%);
   top: 50%;
   left: 0;
-  transition: 3s ease all;
+  animation: slide-out 0.4s;
+}
+
+#switch button:hover {
+  outline: 8px solid var(--highlight-color);
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
-  border: 1px solid black;
+  animation: slide-in .4s forwards;
+  border: 1px solid gray;
 }
 
 
@@ -161,4 +165,23 @@ footer {
   padding: 24px 0;
   font-size: 14px;
   font-weight: 500;
+}
+
+@keyframes slide-in {
+  from{
+    left: 0;
+  }
+  to{
+    left: 50%;
+  }
+
+}
+@keyframes slide-out {
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0;
+  }
+  
 }
