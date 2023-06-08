@@ -36,6 +36,7 @@ body * {
 #container {
   width: 100%;
   max-width: 588px;
+  min-width: 268px;
   margin: auto;
   margin: 56px auto;
   padding: 16px 24px;
